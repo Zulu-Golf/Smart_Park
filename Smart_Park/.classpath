@@ -7,8 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/12/Downloads/mongodb-driver-3.12.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/12/Downloads/mongodb-driver-core-3.0.1 (1).jar"/>
 	<classpathentry kind="lib" path="C:/Users/12/Downloads/mongo-java-driver-2.12.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
