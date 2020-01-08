@@ -1,5 +1,6 @@
 package Parking;
 
+
 public abstract class Personne {
 	private String login,mot_de_passe,nom,prenom,cin;
 	public Personne(String login,String mot_de_passe,String nom,String prenom,String cin) {
@@ -44,5 +45,21 @@ public abstract class Personne {
 	public void setCin(String cin) {
 		this.cin = cin;
 	}
+	
+	@Override
+	public boolean equals(Object p){
+		if(p==null){
+			return false;
+		}
+		if(p.getClass()!=this.getClass()){
+			return false;
+		}
+		
+		Personne o= (Personne)p;
+		
+		return this.cin.equals(o.cin);
+	}
+
+
 
 }

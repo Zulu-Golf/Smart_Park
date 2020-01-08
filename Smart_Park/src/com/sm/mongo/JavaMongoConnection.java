@@ -1,8 +1,6 @@
 package com.sm.mongo;
 
 
-import java.util.*;
-
 import com.mongodb.*;
 
 public class JavaMongoConnection {

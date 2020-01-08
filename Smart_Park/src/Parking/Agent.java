@@ -38,6 +38,21 @@ public class Agent extends Personne{
 	public void setId_parking(String id_parking) {
 		this.id_parking = id_parking;
 	}
+	
+	@Override
+	public boolean equals(Object p){
+		if(p==null){
+			return false;
+		}
+		if(p.getClass()!=this.getClass()){
+			return false;
+		}
+		
+		Agent o= (Agent)p;
+		
+		return this.id_agent.equals(o.id_agent);
+	}
+
 
 	@Override
 	public String toString() {
@@ -45,15 +60,11 @@ public class Agent extends Personne{
 				+ ", Personne=" + super.toString() + "]";
 	}
 	
-	public boolean ajouter_Place() {
-		return true;
-	}
+	
 	public String consulter_Place(Place p) {
-		return "";
+		return p.toString();
 	}
-	public boolean supprimer_Place(Place p) {
-		return true;
-	}
+	
 	
 	
 

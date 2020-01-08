@@ -14,9 +14,7 @@ public class Client extends Personne {
 	public String consulter_Statestique() {
 		return "";
 	}
-	public boolean reserver_Place() {
-		return true;
-	}
+	
 
 	@Override
 	public String toString() {
@@ -39,5 +37,19 @@ public class Client extends Personne {
 	public void setNum_telephone(String num_telephone) {
 		this.num_telephone = num_telephone;
 	}
+	@Override
+	public boolean equals(Object p){
+		if(p==null){
+			return false;
+		}
+		if(p.getClass()!=this.getClass()){
+			return false;
+		}
+		
+		Client o= (Client)p;
+		
+		return this.id_client.equals(o.id_client);
+	}
+
 
 }
