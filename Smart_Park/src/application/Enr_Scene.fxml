@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="467.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="53.0" prefWidth="334.0" style="-fx-background-color: #3d4956;">
+         <children>
+            <Label layoutX="22.0" layoutY="9.0" text="Smart Park" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="22.0" layoutX="265.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/subtract.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="22.0" focusTraversable="true" layoutX="296.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/delete.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutY="62.0" prefHeight="484.0" prefWidth="334.0" style="-fx-background-color: #3d4956;">
+         <children>
+            <Label layoutX="77.0" layoutY="14.0" text="Enregistrement" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="59.0" layoutY="65.0" promptText="nom" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#e8e8e8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField focusColor="WHITE" labelFloat="true" layoutX="56.0" layoutY="358.0" prefHeight="37.0" prefWidth="202.0" promptText="Password" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="22.0" layoutY="423.0" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: #22ff36; -fx-background-radius: 5cm;" text="Enregistrer" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="170.0" layoutY="422.0" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: #ff0000; -fx-background-radius: 5cm;" text="Annuler" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="56.0" layoutY="123.0" promptText="prenom" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#e8e8e8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="56.0" layoutY="183.0" promptText="cin" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#e8e8e8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="59.0" layoutY="241.0" promptText="telephone" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#e8e8e8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="56.0" layoutY="300.0" promptText="Username" style="-fx-prompt-text-fill: white; -fx-text-inner-color: white;" unFocusColor="#e8e8e8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
