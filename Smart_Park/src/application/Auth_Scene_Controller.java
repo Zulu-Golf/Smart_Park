@@ -3,9 +3,11 @@ package application;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.input.MouseEvent;
 
 public class Auth_Scene_Controller implements Initializable{
 
@@ -19,7 +21,7 @@ public class Auth_Scene_Controller implements Initializable{
 		
 	}
 	@FXML
-	private void exitProgramAction(ActionEvent exitProgramEvent) {        
+	private void exitProgramAction(MouseEvent exitProgramEvent) {        
 	    System.out.println("Killing program...");
 	    System.exit(0);
 	}

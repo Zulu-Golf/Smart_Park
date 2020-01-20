@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="467.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Auth_Scene_Controller.java">
+<AnchorPane prefHeight="467.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Auth_Scene_Controller">
    <children>
       <AnchorPane prefHeight="53.0" prefWidth="334.0" style="-fx-background-color: #3d4956;">
          <children>
