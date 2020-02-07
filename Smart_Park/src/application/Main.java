@@ -21,7 +21,7 @@ public class Main extends Application {
 	      
 	            // Read file fxml and draw interface.
 	           Parent auth_scene = FXMLLoader.load(getClass()
-	                    .getResource("/application/Auth_Scene.fxml"));
+	                    .getResource("/application/Enr_Scene.fxml"));
 	          /* auth_scene.setOnMousePressed(new EventHandler<MouseEvent>   () {
 
 				@Override
