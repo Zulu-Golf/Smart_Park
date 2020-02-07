@@ -13,7 +13,7 @@ public class Auth_Scene_Controller implements Initializable{
 
 	public Auth_Scene_Controller() {
 		// TODO Auto-generated constructor stub
-	}
+	} 
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
