@@ -5,13 +5,22 @@ import java.util.*;
 public class Parking {
 private LinkedList<Place> lesPlaces ;
 private Agent a;
-	public Parking(Agent a) {
+private String id;
+	public Parking(Agent a,String id) {
 		this.lesPlaces = new LinkedList<Place>();
 		this.a = a;
+		this.id=id;
 	}
 	public LinkedList<Place> getLesPlaces() {
 		return lesPlaces;
 	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	
 	public Agent getA() {
 		return a;
 	}

@@ -2,12 +2,22 @@ package Parking;
 
 import java.util.Date;
 
+import com.mongodb.BasicDBObjectBuilder;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBObject;
+import com.mongodb.MongoClient;
+
 public class Reservation {
 private String id;
 private Date dateEntrer;
 private Date dateSortie;
 private Client client;
 private Place place;
+MongoClient mongo = new MongoClient( "localhost" , 27017 ); 
+DB db = mongo.getDB("SmartParking");
+DBCollection col1 = db.getCollection("Place");
+DBCollection col2 = db.getCollection("Parking");
 	public Reservation(String id,Date dateEntrer,Date dateSortie,Client client,Place place) {
 		this.id=id;
 		this.dateEntrer=dateEntrer;
@@ -15,6 +25,7 @@ private Place place;
 		this.client=client;
 		this.place=place;
 	}
+	
 	public String getId() {
 		return id;
 	}
@@ -50,6 +61,16 @@ private Place place;
 			// TODO Auto-generated method stub
 			return "Rservation : [ Id : "+this.getId()+", Client : "+this.getClient().toString()+", Date entrée : "+this.getDateEntrer()+", Date sortie : "+this.getDateSortie()+" ]";
 		}
+	
+	public DBObject createDBObject() {
+		BasicDBObjectBuilder docBuilder = BasicDBObjectBuilder.start();
+		docBuilder.append("_id", this.getId());
+		docBuilder.append("Date entrée",this.getDateEntrer());
+		docBuilder.append("Client",this.getClient().createDBObject());
+		docBuilder.append("Place",this.getPlace().createDBObject());
+		docBuilder.append("Date sortie", this.getDateSortie());
+		return docBuilder.get();
+	}
 	
 
 }

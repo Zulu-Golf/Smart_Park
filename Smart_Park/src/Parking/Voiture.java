@@ -1,5 +1,8 @@
 package Parking;
 
+import com.mongodb.BasicDBObjectBuilder;
+import com.mongodb.DBObject;
+
 public class Voiture {
 private String matriculeID;
 private Client client;
@@ -9,6 +12,13 @@ private String rfID;
 		this.matriculeID = matriculeID;
 		this.client = client;
 		this.rfID = rfID;
+	}
+	public DBObject createDBObject() {
+		BasicDBObjectBuilder docBuilder = BasicDBObjectBuilder.start();
+		docBuilder.append("matriculeID", this.getMatriculeID());
+		docBuilder.append("client",this.getClient().createDBObject());
+		docBuilder.append("rfId", this.getRfID());
+		return docBuilder.get();
 	}
 	public Client getClient() {
 		return client;

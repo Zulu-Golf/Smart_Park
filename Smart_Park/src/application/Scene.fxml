@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</AnchorPane>
 
+<AnchorPane prefHeight="739.0" prefWidth="551.0" style="-fx-background-color: transparent;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <AnchorPane fx:id="topbar" prefHeight="87.0" prefWidth="667.0" style="-fx-background-color: #3D4956;" />
+      <AnchorPane fx:id="se_connecter" layoutY="99.0" prefHeight="643.0" prefWidth="667.0" style="-fx-background-color: #3D4956;" />
+      <AnchorPane fx:id="inscrire" layoutY="109.0" prefHeight="630.0" prefWidth="667.0" style="-fx-background-color: #3D4956;" />
+   </children>
+</AnchorPane>
